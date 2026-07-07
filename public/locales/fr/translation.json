@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Salut,",
+    "iam": "Je suis",
+    "name": "Emmanuel ",
+    "job": "Développeur & Designer",
+    "cta": "Mon CV",
+    "badge_exp": "Ans d'expérience",
+    "badge_projects": "Projets réalisés"
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Je suis Emmanuel ADANDE",
+    "text": "Passionné par les innovations technologiques et le design visuel, je suis un développeur et designer dédié à la création des applications sur mesure. Je crée des expériences numériques complètes qui allient une architecture logicielle robuste aux interfaces utilisateur élégantes. Spécialisé dans les technologies modernes comme React.js, C# et Java, je conçois des solutions performantes et visuellement marquantes. Mon approche fusionne la rigueur informatique avec une esthétique minimaliste et innovante pour transformer des concepts complexes en produits digitaux intuitifs.",
+    "years": "Années d'exp.",
+    "projects": "Projets",
+    "technologies": "Technologies"
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Compétences professionnelles",
+    "text": "Des technologies modernes pour des projets web et desktop ambitieux.",
+    "tools": "Outils"
+  },
+  "work": {
+    "title": "Projets",
+    "view": "Voir le projet",
+    "projects": [
+      {
+        "title": "Réservation de Salle",
+        "desc": "Développement Frontend (C#) : Conception en équipe de l'interface d'une application bureau de gestion et réservation de salles (réunions, conférences), incluant un tableau de bord administrateur."},
+      {
+        "title": "Projet clubvideo",
+        "desc": "Développement Java : Création d'une application bureau de suivi des ventes (cassettes), incluant une gestion sécurisée des accès par profils (employé / administrateur)"
+       },
+      {
+        "title": "Assigame",
+        "desc": "Contribution au développement d'une application e-commerce. Conception de l'interface client (HTML/CSS/JS) et intégration avec une architecture backend sous Java Spring Boot, adossée à une base de données relationnelle (PostgreSQL)."
+      }
+      
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "headline": "Travaillons ensemble.",
+    "sub": "Vous avez un projet en tête ? Une idée à concrétiser ? N'hésitez pas à me contacter, je serai ravi d'échanger avec vous.",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "msg": "Votre message...",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "✅ Message envoyé avec succès !",
+    "error": "❌ Erreur lors de l'envoi. Réessayez.",
+    "info_email": "eadande2@gmail.com",
+    "info_phone": "+228 96 47 07 52",
+    "info_location": "Lomé, Togo"
+  },
+  "footer": {
+    "copy": "© Emmanuel ADANDE. Tous droits réservés."
+  }
+}

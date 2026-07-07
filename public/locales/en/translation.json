@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "work": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi there,",
+    "iam": "I am",
+    "name": "Emmanuel",
+    "job": "Developer & Designer",
+    "cta": "My CV",
+    "badge_exp": "Years experience",
+    "badge_projects": "Projects done"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "I am Emmanuel ADANDE",
+    "text": "Passionate about technological innovation and visual design, I am a developer and designer dedicated to creating custom applications. I create comprehensive digital experiences that combine robust software architecture with elegant user interfaces. Specializing in modern technologies like React.js, C#, and Java, I design solutions that are both high-performing and visually striking. My approach merges programming rigor with a minimalist aesthetic to transform complex concepts into intuitive digital products.",
+    "years": "Years exp.",
+    "projects": "Projects",
+    "technologies": "Technologies"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Professional Skills",
+    "text": "Modern technologies to build ambitious web and desktop projects.",
+    "tools": "Tools"
+  },
+  "work": {
+    "title": "Projects",
+    "view": "View project",
+    "projects": [
+      {
+        "title": "Room Booking",
+        "desc": "Frontend Development (C#): Collaborated on the user interface design for a desktop application used for room management and reservations (meetings, conferences), including an admin dashboard."
+      },
+      {
+        "title": "Project clubvideo",
+        "desc": "Java Development: Created a desktop application for tracking sales (cassettes), including secure role-based access control (employee / admin)."
+      },
+      {
+        "title": "Assigame",
+        "desc": "Contributed to the development of an online sales application. Designed the client interface (HTML/CSS/JS) and integrated it with a backend architecture using Java Spring Boot, backed by a relational database (PostgreSQL)."
+      },
+      {
+        "title": "",
+        "desc": ""
+      }
+     
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "headline": "Let's work together.",
+    "sub": "Have a project in mind? An idea to bring to life? Feel free to reach out — I'd love to hear from you.",
+    "name": "Your name",
+    "email": "Your email",
+    "msg": "Your message...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "✅ Message sent successfully!",
+    "error": "❌ Failed to send. Please try again.",
+    "info_email": "eadande2@gmail.com",
+    "info_phone": "+228 96 47 07 52",
+    "info_location": "Lomé, Togo"
+  },
+  "footer": {
+    "copy": "© Emmanuel ADANDE. All rights reserved."
+  }
+}
