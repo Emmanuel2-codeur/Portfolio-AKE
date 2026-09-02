@@ -2,13 +2,19 @@ import { useTranslation } from 'react-i18next'
 import { SectionTitle } from './About'
 
 const projectLinks = [
+  'https://bataille-des-charos.vercel.app/',
   'https://github.com/zaks-web/RESERVATIONDESALLE.git',
-  'https://github.com/Emmanuel2-codeur/club-video-java', 'https://github.com/max-dev-max/Projet_de_vente_en_ligne'
+  'https://github.com/Emmanuel2-codeur/club-video-java',
+  'https://github.com/max-dev-max/Projet_de_vente_en_ligne',
+  'https://portfolio-ake.vercel.app/',
+  
 ]
 const projectImgs = [
   'assets/img/photo3.jpg',
   'assets/img/photo4.jpg',
   'assets/img/photo5.jpg',
+  'assets/img/photo6.jpg',
+  'assets/img/photo7.jpg'
 
 ]
 

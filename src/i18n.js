@@ -38,6 +38,10 @@ const fr = {
     title: 'Projets',
     view: 'Voir le projet',
     projects: [
+      { title: 'Bataille des charos',
+        desc: "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé.Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage)."
+
+      },
       {
         title: 'Réservation de Salle',
         desc: "Développement Frontend (C#) : Conception en équipe de l'interface d'une application bureau de gestion et réservation de salles (réunions, conférences), incluant un tableau de bord administrateur.",
@@ -50,6 +54,10 @@ const fr = {
         title: 'Assigame',
         desc: "Contribution au développement d'une application e-commerce. Conception de l'interface client (HTML/CSS/JS) et intégration avec Java Spring Boot, adossée à PostgreSQL.",
       },
+      {
+        title: 'Portfolio',
+        desc: "Développement Frontend (React.js) : Création d'un site portfolio personnel pour présenter mes compétences, projets et expériences professionnelles. Le site est conçu pour être responsive et optimisé pour les performances, avec une navigation fluide et des animations interactives."
+      }
     ],
   },
   contact: {
@@ -102,6 +110,10 @@ const en = {
     view: 'View project',
     projects: [
       {
+        title: 'Bataille des charos',
+        desc: "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé. Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage).",
+      },
+      {
         title: 'Room Booking System',
         desc: "Frontend Development (C#): Collaborated on the UI design for a desktop room management and booking application (meetings, conferences), including an admin dashboard.",
       },
@@ -113,6 +125,10 @@ const en = {
         title: 'Assigame',
         desc: "Contributed to an e-commerce application. Designed the client interface (HTML/CSS/JS) and integrated it with a Java Spring Boot backend backed by PostgreSQL.",
       },
+      {
+        title: 'Portfolio',
+        desc: "Frontend Development (React.js): Created a personal portfolio website to showcase skills, projects, and professional experiences. The site is designed to be responsive and optimized for performance, with smooth navigation and interactive animations."
+      }
     ],
   },
   contact: {
