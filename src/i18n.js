@@ -111,7 +111,7 @@ const en = {
     projects: [
       {
         title: 'Bataille des charos',
-        desc: "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé. Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage).",
+        desc: " Full-stack web application developed to organize and track a community Free Fire tournament: player registration, group allocation, match scheduling, real-time ranking, and final bracket. The site includes a public area (home, groups, ranking, announcements) and an advanced admin panel with a statistical dashboard, smart player search, audit log, and automated security alert system. Tech stack: React, Tailwind CSS, Framer Motion, Supabase (database, authentication, real-time, storage)."
       },
       {
         title: 'Room Booking System',
