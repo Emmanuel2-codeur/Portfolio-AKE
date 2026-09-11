@@ -10,7 +10,13 @@ const DEV_SKILLS = [
   { icon: 'bxl-php',        label: 'PHP',         color: '#777bb4' },
   { icon: 'bx-code-curly',  label: 'C#',          color: '#9B59B6' },
   { icon: 'bxs-paint',      label: 'UX/UI',       color: '#ff6b6b' },
-]
+  {icon: 'bxl-bootstrap',  label: 'Bootstrap',   color: '#563d7c' },
+  { icon: 'bxl-tailwind-css', label: 'Tailwind CSS', color: '#38bdf8' },
+  { icon: 'bxl-mysql',      label: 'MySQL',       color: '#00758f' },
+  { icon: 'bxl-nodejs',     label: 'Node.js',     color: '#68a063' },
+  { icon: 'bxl-vuejs',      label: 'Vue.js',      color: '#42b883' },,
+  
+  ]
 
 const TOOLS = [
   { icon: 'bxl-figma',      label: 'Figma',        color: '#f24e1e' },
@@ -21,7 +27,8 @@ const TOOLS = [
   { icon: 'bxl-git',        label: 'Git / GitHub', color: '#f05032' },
   { icon: 'bx-data',        label: 'phpMyAdmin',   color: '#f89406' },
   { icon: 'bx-sitemap',     label: 'Star UML',     color: '#4f8ef7' },
-]
+  { icon: 'bxl-docker',     label: 'Docker',       color: '#2496ed' },
+  ]
 
 function SkillBadge({ icon, label, color, tool = false }) {
   return (
