@@ -37,6 +37,22 @@
         "title": "Bataille des charos",
         "desc": "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé.Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage)."
       },
+      {
+        "title": "Innovapdf",
+        "desc": "Application web SaaS full-stack dédiée à la création, l'optimisation par IA et l'export PDF haute fidélité de documents professionnels (CV, factures, devis, etc.). L'outil se distingue par son éditeur visuel réactif offrant une prévisualisation A4 instantanée.  Stack Technique : Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, API IA (Groq/Gemini), Dompdf/Puppeteer."
+      },
+      {
+        "title": "Room Booking",
+        "desc": "Développement Frontend (C#) : Conception en équipe de l'interface d'une application bureau de gestion et réservation de salles (réunions, conférences), incluant un tableau de bord administrateur."
+      },
+      {
+        "title": "Projet clubvideo",
+        "desc": "Développement Java : Création d'une application bureau de suivi des ventes (cassettes), incluant une gestion sécurisée des accès par profils (employé / administrateur)"
+       },
+      {
+        "title": "Assigame",
+        "desc": "Contribution au développement d'une application e-commerce. Conception de l'interface client (HTML/CSS/JS) et intégration avec une architecture backend sous Java Spring Boot, adossée à une base de données relationnelle (PostgreSQL)."
+      },
       
       {
         "title": "Réservation de Salle",

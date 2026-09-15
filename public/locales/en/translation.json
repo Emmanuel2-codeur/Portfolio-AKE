@@ -38,6 +38,10 @@
         "desc": "Complete web application developed to organize and track a community Free Fire tournament: player registration, pool distribution, match scheduling, real-time ranking, and final bracket. The site includes a public area (home, pools, ranking, announcements) and an advanced admin panel with a statistical dashboard, intelligent player search, audit log, and automated security alert system. Tech stack: React, Tailwind CSS, Framer Motion, Supabase (database, authentication, real-time, storage)."
       },
       {
+        "title": "Innovapdf",
+        "desc": "Full-stack SaaS web application dedicated to creating, AI-optimizing, and exporting high-fidelity PDF documents (resumes, invoices, quotes, etc.). The tool features a responsive visual editor with instant A4 preview. Tech Stack: Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, AI API (Groq/Gemini), Dompdf/Puppeteer."
+      },
+      {
         "title": "Room Booking",
         "desc": "Frontend Development (C#): Collaborated on the user interface design for a desktop application used for room management and reservations (meetings, conferences), including an admin dashboard."
       },

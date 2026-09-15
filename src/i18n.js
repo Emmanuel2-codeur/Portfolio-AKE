@@ -43,6 +43,10 @@ const fr = {
 
       },
       {
+        title: 'Innovapdf',
+        desc: "Application web SaaS full-stack dédiée à la création, l'optimisation par IA et l'export PDF haute fidélité de documents professionnels (CV, factures, devis, etc.). L'outil se distingue par son éditeur visuel réactif offrant une prévisualisation A4 instantanée.  Stack Technique : Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, API IA (Groq/Gemini), Dompdf/Puppeteer."
+      },
+      {
         title: 'Réservation de Salle',
         desc: "Développement Frontend (C#) : Conception en équipe de l'interface d'une application bureau de gestion et réservation de salles (réunions, conférences), incluant un tableau de bord administrateur.",
       },
@@ -112,6 +116,10 @@ const en = {
       {
         title: 'Bataille des charos',
         desc: " Full-stack web application developed to organize and track a community Free Fire tournament: player registration, group allocation, match scheduling, real-time ranking, and final bracket. The site includes a public area (home, groups, ranking, announcements) and an advanced admin panel with a statistical dashboard, smart player search, audit log, and automated security alert system. Tech stack: React, Tailwind CSS, Framer Motion, Supabase (database, authentication, real-time, storage)."
+      },
+      {
+        title: 'Innovapdf',
+        desc: "Full-stack SaaS web application dedicated to creating, AI-optimizing, and exporting high-fidelity PDF documents (resumes, invoices, quotes, etc.). The tool features a responsive visual editor with instant A4 preview. Tech Stack: Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, AI API (Groq/Gemini), Dompdf/Puppeteer."
       },
       {
         title: 'Room Booking System',
