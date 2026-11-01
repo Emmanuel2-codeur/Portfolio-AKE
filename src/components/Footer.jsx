@@ -1,29 +1,31 @@
 import { useTranslation } from 'react-i18next'
-
-const socials = [
-  { icon:'bxl-facebook',  href:'https://www.facebook.com/share/12H8rA8UTGx/?mibextid=wwXIfr' },
-  { icon:'bxl-instagram', href:'https://www.instagram.com/emmanuel__228' },
-  { icon:'bxl-github',    href:'https://github.com/Emmanuel2-codeur' },
-  { icon:'bxl-linkedin',  href:'https://www.linkedin.com/in/emmanuel-adande-3b1432300/' },
-]
+import Icon from './Icon'
+import { SOCIALS } from '../data/techs'
+import { scrollToTop } from '../lib/smooth'
+import { asset } from '../lib/asset'
 
 export default function Footer() {
   const { t } = useTranslation()
   return (
-    <footer className="py-12 px-4 glass-strong border-t border-white/40 dark:border-white/5">
-      <div className="max-w-4xl mx-auto text-center space-y-6">
-        <p className="font-heading font-bold text-3xl text-gray-900 dark:text-white tracking-tight">
-          Emmanuel ADANDE<span className="text-accent">.</span>
-        </p>
-        <div className="flex justify-center gap-3">
-          {socials.map(s => (
-            <a key={s.icon} href={s.href} target="_blank" rel="noopener noreferrer"
-               className="w-11 h-11 flex items-center justify-center glass rounded-2xl text-gray-500 dark:text-gray-400 hover:text-accent hover:-translate-y-1 hover:glow-blue transition-all duration-200">
-              <i className={`bx ${s.icon} text-xl`} />
+    <footer className="border-t border-ink/10 px-4 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
+        <div className="flex items-center gap-3">
+          <img src={asset('assets/img/avatar.webp')} alt="" width="44" height="44" className="h-11 w-11 rounded-full border-2 border-accent object-cover" />
+          <div>
+            <p className="font-heading text-lg font-semibold leading-tight tracking-tight">Emmanuel-Dev</p>
+            <p className="text-sm text-muted">{t('footer.copy')}</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-2.5">
+          {SOCIALS.map((s) => (
+            <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="social" style={{ '--c': s.color }}>
+              <Icon icon={s.icon} className="text-xl" />
             </a>
           ))}
+          <button onClick={scrollToTop} aria-label={t('ui.top')} className="social ml-2 !text-ink hover:!bg-ink hover:!text-bg" style={{ '--c': 'rgb(var(--ink))' }}>
+            <Icon icon="ph:arrow-up-bold" className="text-lg" />
+          </button>
         </div>
-        <p className="text-sm text-gray-400 dark:text-gray-500">{t('footer.copy')}</p>
       </div>
     </footer>
   )

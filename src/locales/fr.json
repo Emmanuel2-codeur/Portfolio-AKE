@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "work": "Projets",
+    "contact": "Contact",
+    "services": "Services"
+  },
+  "home": {
+    "greeting": "Salut,",
+    "iam": "Je suis",
+    "name": "Emmanuel",
+    "job": "Développeur & Designer",
+    "cta": "Mon CV",
+    "badge_exp": "Ans d'expérience",
+    "badge_projects": "Projets réalisés",
+    "surname": "ADANDE",
+    "available": "Disponible pour de nouveaux projets",
+    "roles": [
+      "Développeur web",
+      "Designer UI/UX",
+      "Développeur C# & Java"
+    ],
+    "chip_exp": "ans d'expérience",
+    "chip_projects": "projets réalisés",
+    "alt": "Portrait d'Emmanuel ADANDE, développeur & designer",
+    "contact": "Me contacter",
+    "headline_a": "Je transforme vos idées en applications ,",
+    "headline_b": "web et desktop modernes performantes et intuitives."
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Je suis Emmanuel ADANDE",
+    "text": "Passionné par les innovations technologiques et le design visuel, je suis un développeur et designer dédié à la création des applications sur mesure. Je crée des expériences numériques complètes qui allient une architecture logicielle robuste aux interfaces utilisateur élégantes. Spécialisé dans les technologies modernes comme React.js, C# et Java, je conçois des solutions performantes et visuellement marquantes. Mon approche fusionne la rigueur informatique avec une esthétique minimaliste et innovante pour transformer des concepts complexes en produits digitaux intuitifs.",
+    "years": "Années d'exp.",
+    "projects": "Projets",
+    "technologies": "Technologies",
+    "card_location": "Localisation",
+    "card_status": "Statut",
+    "card_status_value": "Disponible",
+    "card_email": "E-mail"
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Compétences professionnelles",
+    "text": "Des technologies modernes pour des projets web et desktop ambitieux.",
+    "tools": "Outils"
+  },
+  "work": {
+    "title": "Projets choisis",
+    "view": "Voir le projet",
+    "projects": [
+      {
+        "title": "Bataille des charos",
+        "desc": "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé.Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage)."
+      },
+      {
+        "title": "Innovapdf",
+        "desc": "Application web SaaS full-stack dédiée à la création, l'optimisation par IA et l'export PDF haute fidélité de documents professionnels (CV, factures, devis, etc.). L'outil se distingue par son éditeur visuel réactif offrant une prévisualisation A4 instantanée.  Stack Technique : Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, API IA (Groq/Gemini), Dompdf/Puppeteer."
+      },
+      {
+        "title": "Réservation de Salle",
+        "desc": "Développement Frontend (C#) : Conception en équipe de l'interface d'une application bureau de gestion et réservation de salles (réunions, conférences), incluant un tableau de bord administrateur."
+      },
+      {
+        "title": "Projet clubvideo",
+        "desc": "Développement Java : Création d'une application bureau de suivi des ventes (cassettes), incluant une gestion sécurisée des accès par profils (employé / administrateur)"
+      },
+      {
+        "title": "Assigame",
+        "desc": "Contribution au développement d'une application e-commerce. Conception de l'interface client (HTML/CSS/JS) et intégration avec une architecture backend sous Java Spring Boot, adossée à une base de données relationnelle (PostgreSQL)."
+      },
+      {
+        "title": "Portfolio",
+        "desc": "Développement Frontend (React.js) : Création d'un site portfolio personnel pour présenter mes compétences, projets et expériences professionnelles. Le site est conçu pour être responsive et optimisé pour les performances, avec une navigation fluide et des animations interactives."
+      }
+    ],
+    "more": "Lire la suite",
+    "less": "Réduire",
+    "filters": {
+      "all": "Tous",
+      "web": "Web",
+      "desktop": "Desktop"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "headline": "Travaillons ensemble.",
+    "sub": "Vous avez un projet en tête ? Une idée à concrétiser ? N'hésitez pas à me contacter, je serai ravi d'échanger avec vous.",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "msg": "Votre message...",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "✅ Message envoyé avec succès !",
+    "error": "❌ Erreur lors de l'envoi. Réessayez.",
+    "info_email": "eadande2@gmail.com",
+    "info_phone": "+228 96 47 07 52",
+    "info_location": "Lomé, Togo",
+    "chat_1": "Bonjour Emmanuel, j'ai une idée d'application…",
+    "chat_2": "Super ! Décrivez-moi votre besoin, je vous réponds rapidement.",
+    "online": "En ligne",
+    "errors": {
+      "name": "Veuillez saisir votre nom (2 caractères minimum).",
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "message": "Votre message est trop court (10 caractères minimum).",
+      "fill": "Merci de remplir tous les champs correctement avant d'envoyer."
+    }
+  },
+  "footer": {
+    "copy": "© Emmanuel ADANDE. Tous droits réservés."
+  },
+  "ui": {
+    "light": "Passer en mode clair",
+    "dark": "Passer en mode sombre",
+    "menu": "Menu",
+    "lang": "Changer de langue",
+    "top": "Retour en haut",
+    "nav": "Navigation principale"
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Applications web",
+        "desc": "Sites et applications web sur mesure avec React et Tailwind : rapides, accessibles et faciles à faire évoluer."
+      },
+      {
+        "title": "Applications desktop",
+        "desc": "Logiciels de gestion et de réservation en C# et Java, connectés à une base de données MySQL."
+      },
+      {
+        "title": "Applications mobiles",
+        "desc": "Interfaces mobiles fluides et adaptées à tous les écrans, pensées pour une prise en main immédiate."
+      },
+      {
+        "title": "Design UI/UX",
+        "desc": "Maquettes Figma, parcours utilisateur et interfaces claires, du wireframe au prototype."
+      },
+      {
+        "title": "API & bases de données",
+        "desc": "Back-end en PHP et Node.js, bases MySQL et API REST pour relier vos applications."
+      },
+      {
+        "title": "Maintenance & évolution",
+        "desc": "Corrections, améliorations et nouvelles fonctionnalités pour garder vos applications fiables dans le temps."
+      }
+    ]
+  }
+}

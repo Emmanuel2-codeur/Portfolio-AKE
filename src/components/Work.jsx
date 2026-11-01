@@ -1,74 +1,99 @@
+import { useRef, useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { SectionTitle } from './About'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Icon from './Icon'
+import SectionTitle from './SectionTitle'
+import useReveal from '../hooks/useReveal'
+import { PROJECTS } from '../data/techs'
+import { asset, prefersReducedMotion } from '../lib/asset'
 
-const projectLinks = [
-  'https://bataille-des-charos.vercel.app',
-  'https://innovapdf.onrender.com',
-  'https://github.com/zaks-web/RESERVATIONDESALLE.git',
-  'https://github.com/Emmanuel2-codeur/club-video-java',
-  'https://github.com/max-dev-max/Projet_de_vente_en_ligne',
-  'https://portfolio-ake.vercel.app',
-  
-]
-const projectImgs = [
-  'assets/img/photo3.jpg',
-  'assets/img/photo4.jpg',
-  'assets/img/photo5.jpg',
-  'assets/img/photo6.jpg',
-  'assets/img/photo7.jpg',
-  'assets/img/photo8.jpg',
+gsap.registerPlugin(ScrollTrigger)
+const FILTERS = ['all', 'web', 'desktop']
 
-]
+function ProjectCard({ project, data }) {
+  const { t } = useTranslation()
+  const [open, setOpen] = useState(false)
+  const long = data.desc.length > 170
+
+  return (
+    <article data-card className="group panel flex flex-col overflow-hidden transition-[border-color,box-shadow] duration-300 hover:border-accent/50 hover:shadow-xl">
+      <a href={project.link} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true"
+         className="relative block aspect-[16/10] overflow-hidden border-b border-ink/10">
+        <img src={asset(project.img)} alt="" loading="lazy" width="1200" height="750"
+             className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]" />
+        <span className="panel absolute left-3 top-3 px-2.5 py-1 text-xs font-medium" style={{ borderRadius: '0.5rem' }}>
+          {t(`work.filters.${project.type}`)}
+        </span>
+      </a>
+
+      <div className="flex flex-1 flex-col gap-3 p-6">
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="font-heading text-xl font-semibold leading-snug tracking-tight">{data.title}</h3>
+          <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`${t('work.view')} — ${data.title}`}
+             className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-ink/15 transition-colors duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-on-accent">
+            <Icon icon="ph:arrow-up-right-bold" className="text-base" />
+          </a>
+        </div>
+        <p className={`text-sm leading-relaxed text-muted ${open ? '' : 'line-clamp-3'}`}>{data.desc}</p>
+        {long && (
+          <button onClick={() => setOpen((o) => !o)} aria-expanded={open} className="self-start text-xs font-semibold text-accent hover:underline">
+            {open ? t('work.less') : t('work.more')}
+          </button>
+        )}
+        <div className="mt-auto flex items-center gap-2.5 pt-3">
+          {project.tags.map((tag) => <Icon key={tag} icon={tag} className="text-xl" />)}
+        </div>
+      </div>
+    </article>
+  )
+}
 
 export default function Work() {
   const { t } = useTranslation()
+  const root = useRef(null)
+  const grid = useRef(null)
+  const userFiltered = useRef(false)
+  const [filter, setFilter] = useState('all')
+  useReveal(root)
+
   const projects = t('work.projects', { returnObjects: true })
+  const all = (Array.isArray(projects) ? projects : [])
+    .map((data, i) => ({ data, project: PROJECTS[i], i }))
+    .filter((p) => p.project)
+  const shown = all.filter((p) => filter === 'all' || p.project.type === filter)
+
+  // Cascade des cartes : au scroll la 1re fois, immédiatement quand on change de filtre
+  useEffect(() => {
+    if (prefersReducedMotion() || !grid.current) return
+    const ctx = gsap.context(() => {
+      gsap.from('[data-card]', {
+        y: 36, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power3.out', clearProps: 'transform,opacity',
+        scrollTrigger: userFiltered.current ? undefined : { trigger: grid.current, start: 'top 85%', once: true },
+      })
+    }, grid)
+    return () => ctx.revert()
+  }, [filter])
+
+  const pick = (f) => { userFiltered.current = true; setFilter(f) }
+
+  const filters = (
+    <div role="tablist" className="panel inline-flex gap-1 p-1" style={{ borderRadius: '0.75rem' }}>
+      {FILTERS.map((f) => (
+        <button key={f} role="tab" aria-selected={filter === f} onClick={() => pick(f)}
+          className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${filter === f ? 'bg-ink text-bg' : 'text-muted hover:text-ink'}`}>
+          {t(`work.filters.${f}`)}
+        </button>
+      ))}
+    </div>
+  )
 
   return (
-    <section id="work" className="py-24 px-4">
-      <div className="max-w-6xl mx-auto">
-        <SectionTitle titleKey="work.title" />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, i) => (
-            <div key={i} className="group relative overflow-hidden rounded-3xl border border-white/60 dark:border-white/10 shadow-lg hover:shadow-2xl hover:shadow-blue-400/15 hover:-translate-y-2 transition-all duration-300 flex flex-col bg-white/30 dark:bg-white/5">
-
-              {/* Image */}
-              <div className="relative overflow-hidden h-48 flex-shrink-0">
-                <img
-                  src={projectImgs[i]}
-                  alt={p.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                {/* Number badge */}
-                <div className="absolute top-3 right-3 w-8 h-8 rounded-xl glass-strong text-xs font-bold font-heading text-accent flex items-center justify-center">
-                  {String(i+1).padStart(2,'0')}
-                </div>
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-
-              {/* Description card */}
-              <div className="p-5 flex flex-col flex-1 gap-3">
-                <h3 className="font-heading font-bold text-base text-gray-900 dark:text-white leading-snug">
-                  {p.title}
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed flex-1">
-                  {p.desc}
-                </p>
-                <a
-                  href={projectLinks[i] || '#'}
-                  target={projectLinks[i] ? '_blank' : '_self'}
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold font-heading text-accent hover:gap-2.5 transition-all duration-200 group/link mt-auto"
-                >
-                  {t('work.view')}
-                  <i className="bx bx-right-arrow-alt text-lg group-hover/link:translate-x-1 transition-transform" />
-                </a>
-              </div>
-
-            </div>
-          ))}
+    <section id="work" ref={root} className="px-4 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl">
+        <SectionTitle titleKey="work.title" aside={<div data-reveal>{filters}</div>} />
+        <div ref={grid} className="grid gap-6 md:grid-cols-2">
+          {shown.map(({ data, project, i }) => <ProjectCard key={i} project={project} data={data} />)}
         </div>
       </div>
     </section>

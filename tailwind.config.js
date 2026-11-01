@@ -1,18 +1,22 @@
 export default {
-  content: ["./index.html","./src/**/*.{js,jsx}"],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Outfit', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        // Une seule famille : Geist. Pour changer de police, modifier ici + l'import dans main.jsx
+        heading: ['"Geist Variable"', 'Geist', 'system-ui', 'sans-serif'],
+        body: ['"Geist Variable"', 'Geist', 'system-ui', 'sans-serif'],
       },
       colors: {
-        accent: '#4f8ef7',
-        accent2: '#f4a261',
+        bg: 'rgb(var(--bg) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
+        ink: 'rgb(var(--ink) / <alpha-value>)',
+        muted: 'rgb(var(--muted) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        'on-accent': 'rgb(var(--on-accent) / <alpha-value>)',
       },
-      backdropBlur: { glass: '18px', heavy: '32px' },
-    }
+    },
   },
   plugins: [],
 }

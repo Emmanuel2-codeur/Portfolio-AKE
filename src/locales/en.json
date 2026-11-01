@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "work": "Projects",
+    "contact": "Contact",
+    "services": "Services"
+  },
+  "home": {
+    "greeting": "Hi there,",
+    "iam": "I am",
+    "name": "Emmanuel",
+    "job": "Developer & Designer",
+    "cta": "My CV",
+    "badge_exp": "Years experience",
+    "badge_projects": "Projects done",
+    "surname": "ADANDE",
+    "available": "Open to new projects",
+    "roles": [
+      "Web developer",
+      "UI/UX designer",
+      "C# & Java developer"
+    ],
+    "chip_exp": "years of experience",
+    "chip_projects": "projects done",
+    "alt": "Portrait of Emmanuel ADANDE, developer & designer",
+    "contact": "Get in touch",
+    "headline_a": "I turn your ideas into modern, ",
+    "headline_b": "high-performing and intuitive web and desktop applications."
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "I am Emmanuel ADANDE",
+    "text": "Passionate about technological innovation and visual design, I am a developer and designer dedicated to creating custom applications. I create comprehensive digital experiences that combine robust software architecture with elegant user interfaces. Specializing in modern technologies like React.js, C#, and Java, I design solutions that are both high-performing and visually striking. My approach merges programming rigor with a minimalist aesthetic to transform complex concepts into intuitive digital products.",
+    "years": "Years exp.",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "card_location": "Location",
+    "card_status": "Status",
+    "card_status_value": "Available",
+    "card_email": "Email"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Professional Skills",
+    "text": "Modern technologies to build ambitious web and desktop projects.",
+    "tools": "Tools"
+  },
+  "work": {
+    "title": "Selected work",
+    "view": "View project",
+    "projects": [
+      {
+        "title": "Bataille des charos",
+        "desc": "Complete web application developed to organize and track a community Free Fire tournament: player registration, pool distribution, match scheduling, real-time ranking, and final bracket. The site includes a public area (home, pools, ranking, announcements) and an advanced admin panel with a statistical dashboard, intelligent player search, audit log, and automated security alert system. Tech stack: React, Tailwind CSS, Framer Motion, Supabase (database, authentication, real-time, storage)."
+      },
+      {
+        "title": "Innovapdf",
+        "desc": "Full-stack SaaS web application dedicated to creating, AI-optimizing, and exporting high-fidelity PDF documents (resumes, invoices, quotes, etc.). The tool features a responsive visual editor with instant A4 preview. Tech Stack: Laravel 11+, Vue.js 3 (Composition API), TypeScript, Tailwind CSS, Inertia.js, AI API (Groq/Gemini), Dompdf/Puppeteer."
+      },
+      {
+        "title": "Room Booking",
+        "desc": "Frontend Development (C#): Collaborated on the user interface design for a desktop application used for room management and reservations (meetings, conferences), including an admin dashboard."
+      },
+      {
+        "title": "Project clubvideo",
+        "desc": "Java Development: Created a desktop application for tracking sales (cassettes), including secure role-based access control (employee / admin)."
+      },
+      {
+        "title": "Assigame",
+        "desc": "Contributed to the development of an online sales application. Designed the client interface (HTML/CSS/JS) and integrated it with a backend architecture using Java Spring Boot, backed by a relational database (PostgreSQL)."
+      },
+      {
+        "title": "Portfolio",
+        "desc": "Frontend Development (React.js): Created a personal portfolio website to showcase skills, projects, and professional experiences. The site is designed to be responsive and optimized for performance, with smooth navigation and interactive animations."
+      }
+    ],
+    "more": "Read more",
+    "less": "Show less",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "desktop": "Desktop"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "headline": "Let's work together.",
+    "sub": "Have a project in mind? An idea to bring to life? Feel free to reach out — I'd love to hear from you.",
+    "name": "Your name",
+    "email": "Your email",
+    "msg": "Your message...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "✅ Message sent successfully!",
+    "error": "❌ Failed to send. Please try again.",
+    "info_email": "eadande2@gmail.com",
+    "info_phone": "+228 96 47 07 52",
+    "info_location": "Lomé, Togo",
+    "chat_1": "Hi Emmanuel, I have an app idea…",
+    "chat_2": "Great! Tell me what you need and I will get back to you quickly.",
+    "online": "Online",
+    "errors": {
+      "name": "Please enter your name (2 characters minimum).",
+      "email": "Please enter a valid email address.",
+      "message": "Your message is too short (10 characters minimum).",
+      "fill": "Please fill in all fields correctly before sending."
+    }
+  },
+  "footer": {
+    "copy": "© Emmanuel ADANDE. All rights reserved."
+  },
+  "ui": {
+    "light": "Switch to light mode",
+    "dark": "Switch to dark mode",
+    "menu": "Menu",
+    "lang": "Change language",
+    "top": "Back to top",
+    "nav": "Main navigation"
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Web applications",
+        "desc": "Custom websites and web apps built with React and Tailwind: fast, accessible and easy to evolve."
+      },
+      {
+        "title": "Desktop applications",
+        "desc": "Management and booking software in C# and Java, connected to a MySQL database."
+      },
+      {
+        "title": "Mobile applications",
+        "desc": "Smooth mobile interfaces that adapt to every screen and feel instantly familiar."
+      },
+      {
+        "title": "UI/UX design",
+        "desc": "Figma mock-ups, user flows and clear interfaces, from wireframe to prototype."
+      },
+      {
+        "title": "API & databases",
+        "desc": "PHP and Node.js back-ends, MySQL databases and REST APIs to connect your applications."
+      },
+      {
+        "title": "Maintenance & evolution",
+        "desc": "Fixes, improvements and new features to keep your applications reliable over time."
+      }
+    ]
+  }
+}
