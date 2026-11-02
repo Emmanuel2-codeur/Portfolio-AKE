@@ -58,7 +58,7 @@ export const SERVICE_ICONS = [
 ]
 
 export const PROJECTS = [
-  { type: 'web',     img: 'assets/img/photo3.webp', link: 'https://bataille-des-charos.vercel.app',
+  { type: 'web',     img: 'assets/img/photo3.webp', link: 'https://mechantcharo-guilde.vercel.app',
     tags: ['logos:react', 'logos:tailwindcss-icon', 'logos:framer', 'logos:supabase-icon'] },
   { type: 'web',     img: 'assets/img/photo4.webp', link: 'https://innovapdf.onrender.com',
     tags: ['logos:laravel', 'logos:vue', 'logos:typescript-icon', 'logos:tailwindcss-icon'] },

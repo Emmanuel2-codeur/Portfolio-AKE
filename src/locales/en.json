@@ -52,8 +52,8 @@
     "view": "View project",
     "projects": [
       {
-        "title": "Bataille des charos",
-        "desc": "Complete web application developed to organize and track a community Free Fire tournament: player registration, pool distribution, match scheduling, real-time ranking, and final bracket. The site includes a public area (home, pools, ranking, announcements) and an advanced admin panel with a statistical dashboard, intelligent player search, audit log, and automated security alert system. Tech stack: React, Tailwind CSS, Framer Motion, Supabase (database, authentication, real-time, storage)."
+        "title": "Mechantcharo-guilde",
+        "desc": "Web application for the management and administration of a Free Fire game guild, which also includes esports tournaments."
       },
       {
         "title": "Innovapdf",

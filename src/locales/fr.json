@@ -52,8 +52,8 @@
     "view": "Voir le projet",
     "projects": [
       {
-        "title": "Bataille des charos",
-        "desc": "Application web complète développée pour organiser et suivre un tournoi communautaire de Free Fire : inscription des joueurs, répartition en poules, programmation des matchs, classement en temps réel et bracket final. Le site inclut un espace public (accueil, poules, classement, annonces) et un panneau d'administration avancé avec tableau de bord statistique, recherche intelligente de joueurs, journal d'audit et système d'alertes de sécurité automatisé.Stack technique : React, Tailwind CSS, Framer Motion, Supabase (base de données, authentification, temps réel, stockage)."
+        "title": "Mechantcharo-guilde",
+        "desc": "Application web de gestion et d'administration d'une guilde du jeux free fire ils contient aussi des tournois esports."
       },
       {
         "title": "Innovapdf",
